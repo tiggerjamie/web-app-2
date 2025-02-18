@@ -5,8 +5,11 @@
 <ul>
   <% for company in @companies %>
     <li>
-      <%= company["name"] %>
+      <a href="/companies/<%= company["id"] %>">
+      <%= company["name"] %></a>
     </li>
   <% end %>
 </ul>
 <h2>Currently, there are <%= @companies.count %> companies</h2>
+
+<a href="/companies/new">Insert New Company</a>
