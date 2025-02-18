@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get("/tacos", {:controller => "tacos", :action => "index"})
   get("/cards", {:controller => "cards", :action => "index"})
   get("/bitcoins", {:controller => "bitcoins", :action => "index"})
+  get("/companies", {:controller => "companies", :action => "index"})
 
   resources "companies"
   # get("/companies", {:controller => "companies", :action => "index"})

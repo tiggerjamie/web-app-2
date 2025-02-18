@@ -1,11 +1,12 @@
-<% companies = Company.all %>
-
 <h1>My CRM</h1>
- 
+
+
+
 <ul>
-  <% for company in companies %>
+  <% for company in @companies %>
     <li>
       <%= company["name"] %>
     </li>
   <% end %>
 </ul>
+<h2>Currently, there are <%= @companies.count %> companies</h2>
